@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+	    <style type="text/css">
+
+            .background{
+            background-image:url("LEVEL_PREVIEW.jpg");
+            width:1000px;
+            height:800px;
+            background-size:cover;
+		    display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            }
+
+            .imagecentral{
+            display: flex;
+            justify-content: space-around;
+            border:2px solid magenta;
+            }
+
+            .dialogueexplicatif{
+            display: flex;
+            border:2px solid white;
+            background-color : black;
+            color : white;
+            }
+            .boitedialogue{
+            display: flex;
+            justify-content: space-around;
+            border:2px solid magenta;
+            justify-content: center;
+
+            }
+
+            .heros{
+            border:2px solid red;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            }
+
+            .perso{
+            border:2px solid white;
+            background-color : black;
+            color : white;
+            }
+		    
+            .descriptionHeros{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            }
+            
+            .monstre{
+            display:flex;
+            border:1px solid yellow;
+            flex-direction: column;
+            }
+
+            .typeattaque{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            }
+
+            .attaque{
+            border:2px solid white;
+            background-color : black;
+            color : white;
+            }
+
+            .pvennemi{
+            border:2px solid red;
+            }
+
+            #pvbernardlhermite{
+                display:inline-block}
+            
+            #pvhibouxrose{
+                display:inline-block;}
+            
+            #hiboux{
+            border:2px solid white;
+            background-color : black;
+            color : white;
+            }
+
+            #pvfantome{
+            display:inline-block;}
+
+            #fantome{
+            border:2px solid white;
+            background-color : black;
+            color : white;
+            }
+
+            #pvcoccinelle{
+            display:inline-block;}
+
+            #coccinelle{
+            border:2px solid white;
+            background-color : black;
+            color : white;
+            }
+
+            #monstre1:hover #hiboux{
+            visibility:visible;
+            }
+            
+            
+   
+        </style>
+        <script src="Javascript uirpg battle.js"async></script>
+    </head>
+    
+    <body>
+        <div class="background">
+            <div class=imagecentral>
+                <div class="heros">
+                    <div id="bernard">
+                        <img src="bernard l'hermite.png" style = width:100px >
+                    </div>
+                    <div id="robot vert">
+                        <img src="robot vert.png" style = width:100px>
+                    </div>
+                    <div id="ballon">
+                        <img src="ballon.png" style = width:70px>
+                    </div>
+                    <div id="jsp">
+                        <img src="boule bleue.png" style = width:90px>
+                    </div>
+                </div>
+
+                <div class="monstre">
+                    <div id="monstre1">
+                        <img src="truc rose.png" style = width:100px>
+                    </div>
+                    <div id="monstre2">
+                        <img src="fantome.png" style = width:110px>
+                    </div>
+                    <div id="monstre3">
+                        <img src="cocinelle.png" style = width:110px>
+                    </div>
+                </div>
+            </div>
+            <div class="dialogueexplicatif">
+                Balon Joyeux à attaqué Cocinelle avec Compliments
+            </div>
+
+
+            <div class="boitedialogue">
+                <div class="descriptionHeros">
+                    <div class="perso">
+                    Bernard l'hermite </br>
+                    <div id="pvbernardlhermite"> truc </div> PV</br> 50 mana</div>
+                    <div class="perso">
+                    Robot vert </br> <div id="pvbrobotvert"> 100 PV </div> 10 mana</div>
+                    <div class="perso">
+                    Ballon joyeux </br><div id="pvballonjoyeux"> 100 PV </div> 100 mana</div> 
+                    <div class="perso">
+                    Boule bleue </br><div id="pvboulebleue"> 100 PV </div> 70 mana</div>
+                </div>
+                <div class="typeattaque">
+                    <div class="attaque">
+                        <div id="attaquebernard">Attaque : Pince de crabe</div>Défense : Bouclier coquille</br>Action Spéciale : Tornade de sable
+                    </div>
+                    <div class="attaque">
+                        Attaque : Bras mécanique</br>Défense : Anti-virus</br>Action Spéciale : Lance disque dur
+                    </div>
+                    <div class="attaque">
+                        Attaque : Compliments</br>Défense : Câlin</br>Action Spéciale : Bisous magiques
+                    </div>
+                    <div class="attaque">
+                        Attaque : Rebondir</br>Défense : Rouler</br>Action Spéciale : Brisage de nuque
+                    </div>
+                </div>
+                <div class="pvennemi">
+                    <div id="hiboux">Hiboux rose <div id="pvhibouxrose">pv hiboux rose</div> PV</div>
+                    <div id="fantome">Fantôme <div id="pvfantome">pv fantôme</div> PV</div>
+                    <div id="coccinelle">Coccinelle <div id="pvcoccinelle">pv coccinelle</div> PV</div>
+                    
+
+
+                </div>
+            </div>
+         
+        </div>
+
+    </body>
+    </html>
