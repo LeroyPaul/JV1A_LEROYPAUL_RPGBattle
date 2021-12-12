@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+	    <style type="text/css">
+
+            .background{
+            background-image:url("LEVEL_PREVIEW.jpg");
+            width:1000px;
+            height:800px;
+            background-size:cover;
+		    display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            }
+
+            .imagecentral{
+            display: flex;
+            justify-content: space-around;
+            }
+
+            #dialogueexplicatif{
+            display: flex;
+            border:2px solid white;
+            background-color : black;
+            color : white;
+            justify-content: space-around;
+            }
+            .boitedialogue{
+            display: flex;
+            justify-content: space-around;
+            justify-content: center;
+
+            }
+
+            .heros{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            }
+
+            .perso{
+            border:2px solid white;
+            background-color : black;
+            color : white;
+            }
+		    
+            .descriptionHeros{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            }
+
+
+            .typeattaque{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            }
+
+            .attaque{
+            border:2px solid white;
+            background-color : black;
+            color : white;
+            }
+
+
+            #pvbernardlhermite{
+                display:inline-block}
+            
+            #manabernardlhermite{
+                display:inline-block}
+
+            #pvrobotvert{
+                display:inline-block}
+            
+            #manarobot{
+                display:inline-block}
+
+            #pvballonjoyeux{
+                display:inline-block}
+            
+            #manaballon{
+                display:inline-block}
+            
+            #pvboulebleue{
+                display:inline-block}
+
+            #manaboule{
+                display:inline-block}
+            
+            #pvhibouxrose{
+                display:inline-block;}
+
+            
+            #hiboux{
+            border:2px solid white;
+            background-color : black;
+            color : white;
+            }
+
+            #pvfantome{
+            display:inline-block;}
+
+            #fantome{
+            border:2px solid white;
+            background-color : black;
+            color : white;
+            }
+
+            #pvcoccinelle{
+            display:inline-block;}
+
+            #coccinelle{
+            border:2px solid white;
+            background-color : black;
+            color : white;
+            }
+            
+            /* Je comprend pas pourquoi ça ne marche pas...
+            
+            .pvennemi {
+            visibility:hidden}
+            
+
+            
+            .monstre:hover + .pvennemi{
+            visibility:visible;}
+            */
+            
+            
+   
+        </style>
+        <script src="Javascript uirpg battle.js"async></script>
+    </head>
+    
+    <body>
+        <div class="background">
+            <div class="imagecentral">
+                <div class="heros">
+                    <div id="bernard">
+                        <img src="bernard l'hermite.png" style = width:100px >
+                    </div>
+                    <div id="robot vert">
+                        <img src="robot vert.png" style = width:100px>
+                    </div>
+                    <div id="ballon">
+                        <img src="ballon.png" style = width:70px>
+                    </div>
+                    <div id="boule bleue">
+                        <img src="boule bleue.png" style = width:90px>
+                    </div>
+                </div>
+
+                <div class="monstre">
+                    <div id="monstre1">
+                        <img src="truc rose.png" style = width:100px>
+                    </div>
+                    <div id="monstre2">
+                        <img src="fantome.png" style = width:110px>
+                    </div>
+                    <div id="monstre3">
+                        <img src="cocinelle.png" style = width:110px>
+                    </div>
+                </div>
+            </div>
+            <input type="button" id="bouton" value="Cliquez pour démarrer le combat">
+            <div id="dialogueexplicatif">
+                
+            </div>
+
+
+            <div class="boitedialogue">
+                <div class="descriptionHeros">
+                    <div class="perso">
+                    Bernard l'hermite </br>
+                    <div id="pvbernardlhermite"> pv </div> PV</br><div id="manabernardlhermite">mana</div> mana </div>
+                    <div class="perso">
+                    Robot vert </br> 
+                    <div id="pvrobotvert"> pv </div> PV</br><div id="manarobot"> mana</div> mana</div>
+                    <div class="perso">
+                    Ballon joyeux </br>
+                    <div id="pvballonjoyeux"> pv </div> PV</br><div id="manaballon"> mana</div> mana</div> 
+                    <div class="perso">
+                    Boule bleue </br>
+                    <div id="pvboulebleue"> pv </div> PV</br><div id="manaboule"> mana</div> mana</div>
+                </div>
+
+                <div class="typeattaque">
+                    <div class="attaque">
+                        <div id="attaquebernard">Attaque : Pince de crabe</div><div id="defensebernard">Défense : Bouclier coquille</div><div id="specialbernard">Action Spéciale : Tornade de sable</div>
+                    </div>
+                    <div class="attaque">
+                        <div id="attaquerobot">Attaque : Bras mécanique</div><div id="defenserobot">Défense : Anti-virus</div><div id="specialrobot">Action Spéciale : Lance disque dur</div>
+                    </div>
+                    <div class="attaque">
+                        <div id=attaqueballon>Attaque : Compliments</div><div id="defenseballon">Défense : Câlin</div><div id="specialballon">Action Spéciale : Bisous magiques</div>
+                    </div>
+                    <div class="attaque">
+                        <div id=attaqueboule>Attaque : Rebondir</div><div id="defenseboule">Défense : Rouler</div><div id="specialboule">Action Spéciale : Brisage de nuque</div>
+                    </div>
+                </div>
+
+                <div class="pvennemi">
+                    <div id="hiboux">Hiboux rose <div id="pvhibouxrose">pv hiboux rose</div> PV</div>
+                    <div id="fantome">Fantôme <div id="pvfantome">pv fantôme</div> PV</div>
+                    <div id="coccinelle">Coccinelle <div id="pvcoccinelle">pv coccinelle</div> PV</div>
+                    
+
+
+                </div>
+            </div>
+         
+        </div>
+
+    </body>
+    </html>
